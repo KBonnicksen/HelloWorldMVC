@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-dark navbar-expand-sm navbar-toggleable-sm bg-danger">
+        <nav class="navbar navbar-dark navbar-expand-sm navbar-toggleable-sm bg-danger border-bottom">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Hello World</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -29,13 +29,11 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+    <main role="main">
+        @RenderBody()
+    </main>
 
-    <footer class="footer bg-danger container-fluid position-absolute">
+    <footer class="footer bg-danger container-fluid position-absolute border-top">
         <div class="container text-white text-center py-3">&copy; @DateTime.Now.Year Hello World - 
             <a  class="text-white-50" asp-controller="Home" asp-action="Index">Home</a>
         </div>
